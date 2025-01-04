@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc); /* Gradient background */
     color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #6a11cb;
     color: white;
     padding: 20px;
     text-align: center;
@@ -16,6 +16,7 @@ header {
 header h1 {
     font-size: 2.5em;
     margin: 0;
+    color: #fff;
 }
 
 header nav ul {
@@ -32,23 +33,31 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #2575fc;
+    transition: background-color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #6a11cb;
+    text-decoration: none;
+    color: white;
 }
 
 section {
     padding: 50px;
     margin: 20px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
 }
 
 section h2 {
-    color: #333;
-    font-size: 2em;
+    color: #2575fc;
+    font-size: 2.5em;
     margin-bottom: 20px;
+    border-bottom: 2px solid #2575fc;
 }
 
 ul {
@@ -58,29 +67,28 @@ ul {
 
 ul li {
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
 }
 
-ul li a {
-    color: #333;
-    text-decoration: none;
-}
-
-ul li a:hover {
-    text-decoration: underline;
+ul li:hover {
+    transform: translateX(10px);
+    color: #6a11cb;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #333;
+    padding: 25px;
+    background-color: #2575fc;
     color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 footer p {
     margin: 0;
+    font-size: 1em;
 }
 
-/* Mobile Responsive Design */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
@@ -110,7 +118,6 @@ footer p {
     }
 }
 
-/* Extra Small Mobile (for very small screens) */
 @media (max-width: 480px) {
     header h1 {
         font-size: 1.5em;
@@ -128,9 +135,8 @@ footer p {
     section h2 {
         font-size: 1.6em;
     }
-.hero-section {
-    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Beautiful gradient */
-    padding: 50px;
-    color: white;
-}
 
+    footer p {
+        font-size: 0.9em;
+    }
+}
