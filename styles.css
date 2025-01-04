@@ -15,6 +15,7 @@ header {
 
 header h1 {
     font-size: 2.5em;
+    margin: 0;
 }
 
 header nav ul {
@@ -77,4 +78,58 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header nav ul {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 30px;
+        margin: 10px;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+/* Extra Small Mobile (for very small screens) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header nav ul li {
+        margin: 8px 0;
+    }
+
+    section {
+        padding: 20px;
+        margin: 5px;
+    }
+
+    section h2 {
+        font-size: 1.6em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
 }
