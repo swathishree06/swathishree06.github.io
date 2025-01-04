@@ -2,12 +2,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa;
+    background-color: #e0f7fa; /* Light cyan background */
     color: #333;
 }
 
 header {
-    background: linear-gradient(45deg, #6a1b9a, #8e24aa);
+    background: linear-gradient(45deg, #80deea, #b2ebf2); /* Light gradient */
     color: white;
     padding: 20px;
     text-align: center;
@@ -42,21 +42,21 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ffeb3b;
+    color: #ff9800; /* Soft yellow-orange for hover */
     transform: scale(1.1);
 }
 
 section {
     padding: 50px;
     margin: 20px;
-    background-color: #ffffff;
+    background-color: #ffffff; /* White background for sections */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
 
 section:hover {
-    background-color: #f3e5f5;
+    background-color: #f1f8e9; /* Light greenish-yellow background on hover */
 }
 
 section h2 {
@@ -77,19 +77,19 @@ ul li {
 }
 
 ul li a {
-    color: #6a1b9a;
+    color: #00796b; /* Teal color for links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 ul li a:hover {
-    color: #ff4081;
+    color: #ff5722; /* Bright orange on hover */
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #009688; /* Soft teal footer */
     color: white;
 }
 
