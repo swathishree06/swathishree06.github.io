@@ -7,12 +7,13 @@ body {
 }
 
 header {
-    background: linear-gradient(45deg, #80deea, #b2ebf2); /* Light gradient */
+    background: linear-gradient(45deg, #e1bee7, #d1c4e9); /* Lavender gradient */
     color: white;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 header h1 {
     font-size: 3em;
